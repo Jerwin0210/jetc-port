@@ -564,6 +564,12 @@
     <script src="style-switcher.js"></script>
     <script>
         AOS.init();
+        $(document).ready(function () {
+            $('body').on('click', 'a', function () {
+            $('a.active').removeClass('active');
+            $(this).addClass('active');
+        });
+})
     </script>
 </body>
 
