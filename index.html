@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JETC | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
         integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Style Switcher -->
-    <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-1" disabled>
-    <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="color-3.css" class="alternate-style" title="color-3">
-    <link rel="stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
-    <link rel="stylesheet" href="style-switcher.css">
+    <link rel="stylesheet" href="css//skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css//skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css//skins/color-3.css" class="alternate-style" title="color-3">
+    <link rel="stylesheet" href="css//skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css//skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 
 <body>
@@ -38,8 +38,8 @@
             <!-- <div class="nav-toggler">
                 <span><i class="fas fa-bars"></i></span>
             </div> -->
-            <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+            <ul class="nav" id="navbar">
+                <li><a href="#home" class="active"><i class="fa fa-home-user"></i>Home</a></li>
                 <li><a href="#about" class="list"><i class="fa fa-user-circle"></i>About</a></li>
                 <li><a href="#services" class="list"><i class="fa fa-list"></i>Services</a></li>
                 <li><a href="#portfolio" class="list"><i class="fa fa-briefcase"></i>Portfolio</a></li>
@@ -52,11 +52,11 @@
 
         <!-- ===Mobile-nav=== start-->
         <nav class="mobile-nav">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a class="list" href="#home active">Home</a>
+            <a class="list" href="#about">About</a>
+            <a class="list" href="#services">Services</a>
+            <a class="list" href="#portfolio">Portfolio</a>
+            <a class="list" href="#contact">Contact</a>
         </nav>
         <!-- ===Mobile-nav=== end-->
 
@@ -75,14 +75,13 @@
                                 data-aos-easing="ease-in-shine" class="my-profession">And I'm a <span class="typing">Web
                                     Developer</span></h3>
                             <p data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="300"
-                                data-aos-easing="ease-in-shine">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Pariatur voluptates culpa velit
-                                corrupti id odio commodi recusandae, dolorum officia quisquam.</p>
-                            <a data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200"
-                                data-aos-easing="ease-in-shine" href="#contact" class="btn hire-me">Hire me</a>
+                                data-aos-easing="ease-in-shine">Able to build a Web presence from the ground up from
+                                concept, navigation, layout and programming</p>
+                            <a data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-shine"
+                                href="#contact" class="btn hire-me">Hire me</a>
                         </div>
                         <div class="home-img">
-                            <img src="me1.png" alt="" data-aos="fade-left" data-aos-duration="1000"
+                            <img src="image/me1.png" alt="" data-aos="fade-left" data-aos-duration="1000"
                                 data-aos-offset="300" data-aos-easing="ease-in-shine">
                         </div>
                     </div>
@@ -109,14 +108,12 @@
                                         <span data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="300"
                                             data-aos-easing="ease-in-shine">Web Developer</span>
                                     </h3>
-                                    <p data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">Lorem ipsum,
-                                        dolor sit amet
-                                        consectetur adipisicing elit. Cupiditate in adipisci
-                                        tempora numquam quod placeat beatae ipsum possimus necessitatibus dolores
-                                        consequatur ab tempore ipsam ea accusantium illo omnis, fugit dolorum voluptatum
-                                        autem corrupti. Officia aspernatur repellat perferendis rem, odio ducimus
-                                        impedit blanditiis alias inventore architecto quaerat eveniet dolorum hic
-                                        aperiam?</p>
+                                    <p data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                                        Responsible for the coding, design and layout of a website according to a
+                                        company’s specifications. As the role takes into consideration user experience
+                                        and function, a certain level of both graphic design and computer programming is
+                                        necessary. Once a website has been created, a Web Developer will generally
+                                        assist with the maintenance and upkeep of the website.</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -124,13 +121,13 @@
                                     <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300"
                                         data-aos-easing="" ease-in-shine class="row">
                                         <div class="info-item padd-15">
-                                            <p>Birthday: <span>Secret</span></p>
+                                            <p>Birthday: <span>N/A</span></p>
                                         </div>
                                         <div class="info-item">
-                                            <p>Age: <span>Secret</span></p>
+                                            <p>Age: <span>N/A</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Address: <span>Dyan lang sa tabi</span></p>
+                                            <p>Address: <span>Lipa City</span></p>
                                         </div>
                                         <div class="info-item">
                                             <p>Email: <span>jerwin.cuchapin@gmail.com</span></p>
@@ -340,8 +337,8 @@
                                 <i class="fa fa-laptop-code fa-lg"></i>
                             </div>
                             <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat aperiam praesentium
-                                facilis.</p>
+                            <p> Create and code internet sites and web pages, many of which combine text with sounds,
+                                pictures, graphics and video clips.</p>
                         </div>
                     </div>
                     <!-- Service Items End -->
@@ -354,8 +351,8 @@
                                 <i class="fa fa-code fa-lg"></i>
                             </div>
                             <h4>Web Developing</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat aperiam praesentium
-                                facilis.</p>
+                            <p> Typically responsible for the appearance, of the site and technical aspects, such as
+                                site speed and how much traffic the site can handle</p>
                         </div>
 
                     </div>
@@ -368,8 +365,8 @@
                                 <i class="fa fa-wrench fa-lg"></i>
                             </div>
                             <h4>Computer Maintenance & Repair</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusamus vel nobis
-                                repellat quaerat assumenda!</p>
+                            <p>Manage, identify problems and perform maintenance to servers, network, desktop, printers,
+                                power supply and other network/computer equipment.</p>
                         </div>
 
                     </div>
@@ -400,7 +397,7 @@
                             data-aos-easing="ease-in-shine" class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="4671190.jpg" alt="">
+                                    <img src="image/4671190.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -410,7 +407,7 @@
                             data-aos-easing="ease-in-shine" class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="4671190.jpg" alt="">
+                                    <img src="image/4671190.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -420,7 +417,7 @@
                             data-aos-easing="ease-in-shine" class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="4671190.jpg" alt="">
+                                    <img src="image/4671190.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -486,23 +483,23 @@
                     <div class="row">
                         <div class="contact-form padd-15">
                             <div class="row">
-                                <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300"
-                                    data-aos-easing="ease-in-shine" class="form-item col-6 padd-15">
+                                <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-shine"
+                                    class="form-item col-6 padd-15">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Name">
                                     </div>
                                 </div>
 
-                                <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300"
-                                    data-aos-easing="ease-in-shine" class="form-item col-6 padd-15">
+                                <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-shine"
+                                    class="form-item col-6 padd-15">
                                     <div class="form-group">
                                         <input type="email" class="form-control" placeholder="Email">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="300"
-                                    data-aos-easing="ease-in-shine" class="form-item col-12 padd-15">
+                                <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-shine"
+                                    class="form-item col-12 padd-15">
                                     <div class="form-group">
                                         <input type="email" class="form-control" placeholder="Subject">
                                     </div>
@@ -560,8 +557,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
         integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
-    <script src="style-switcher.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
         AOS.init();
